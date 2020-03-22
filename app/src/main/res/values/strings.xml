@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SRTest</string>
+    <string name="loginButton">log in</string>
+    <string name="friendsString">number of friends</string>
+    <string name="textProfilePic">photoUrl</string>
+    <string name="textLogOut">log out</string>
+    <integer name="com_vk_sdk_AppId">7363753</integer>
+</resources>
