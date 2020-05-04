@@ -1,4 +1,4 @@
-package com.example.srtest;
+package com.vk.login;
 
 import android.content.Context;
 

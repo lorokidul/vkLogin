@@ -1,4 +1,4 @@
-package com.example.srtest;
+package com.vk.login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,12 +6,10 @@ import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
 import com.squareup.picasso.Picasso;
 import com.vk.sdk.VKAccessToken;
 import com.vk.sdk.VKCallback;
@@ -29,8 +27,6 @@ import com.vk.sdk.util.VKUtil;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
     private String[] scope = new String[]{VKScope.FRIENDS, VKScope.PHOTOS};
@@ -50,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
         }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.start_layout);
-        //String[] fingerprints = VKUtil.getCertificateFingerprint(this, this.getPackageName());
-        //System.out.println(Arrays.asList(fingerprints));
+        String[] fingerprints = VKUtil.getCertificateFingerprint(this, this.getPackageName());
+
         imageView = (ImageView) findViewById(R.id.avatarImage);
 
     }
